@@ -21,7 +21,6 @@ export default function Home({ api_key }) {
         presence_penalty: 0.0,
         stop: ["You:"],
       });
-      console.log(res.data.choices[0].text);
       setResponse(res.data.choices[0].text);
     } catch (error) {
       console.log(error);
